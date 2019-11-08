@@ -1,0 +1,12 @@
+1 - kubectl apply -f front.yml && kubectl apply -f  backend1.yml && kubectl apply -f  backend2.yml && kubectl apply -f  backend3.yml
+
+2 - kubectl get svc --namespace test | grep frontend | awk '{print $3}' - we get IP
+
+3 - curl IP:8081
+
+Ater this we can change this cluster by SCRIPT
+
+
+
+
+
